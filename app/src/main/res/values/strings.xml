@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TripPlanner</string>
+    <string name="event_list_name">Events</string>
+</resources>

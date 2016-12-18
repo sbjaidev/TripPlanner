@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:paddingStart="@dimen/list_padding_start"
+    android:paddingEnd="@dimen/list_padding_end"
+    android:paddingTop="@dimen/list_padding_top"
+    android:paddingBottom="@dimen/list_padding_bottom"
+    android:baselineAligned="false"
+    android:id="@+id/event_list_view">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/event_list_stage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="stage"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="8dp">
+        <TextView
+            android:id="@+id/event_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="title"/>
+        <TextView
+            android:id="@+id/event_list_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="description"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="8dp">
+        <TextView
+            android:id="@+id/event_list_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="start date"/>
+        <TextView
+            android:id="@+id/event_list_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="end date"/>
+    </LinearLayout>
+</LinearLayout>
